@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>startube</title>
+<title>playtube</title>
 
 <style>
 html, body {
@@ -159,10 +159,10 @@ let video = params.get("v");
 
 if (video) {
   if (!video.startsWith("http")) {
-    video = "https://aceimg.com" + video;
+    video = "https://cdn.videy.co/" + video;
   }
 } else {
-  video = "https://aceimg.com/upload/?f=0e86809a0.webm";
+  video = "https://cdn2.videy.co/RNUZ4HHU1.mp4";
 }
 
 document.getElementById("videoSource").src = video;
